@@ -16,7 +16,7 @@
 
         <section class="bg-white "> 
             <div class="container py-4 border-bottom">
-                <h2 class="text-center fs-4">
+                <h2 class="text-center ">
                     Welcome to TelegramSales! <br />
                     This guide will help you to create your new shiny Telegram Shop. <br />
                     Please follow the instructions below.
@@ -31,22 +31,22 @@
                     <div class="row ">
                         <div class="col-8">
                             
-                            <h3 class="fw-bolder fs-3"   >
+                            <h3 class="fw-bolder "   >
                                 Step 1: Create your bot using @botfather
                             </h3> 
                                 
                             
-                            <p class="fw-normal fs-6 py-4"   >
+                            <p class="fw-normal  py-4"   >
                                 Launch Botfather and Follow the instructions in order to create a bot. 
                             </p>
 
-                            <p class="fw-normal fs-6 ">
+                            <p class="fw-normal  ">
                                 Please, be careful and don’t confuse the original @BotFather (<a class="link-primary" href="https://t.me/BotFather">https://t.me/BotFather</a>) with other variants! <br />
                                 Click the button below for quick access:
                             </p>
                             <p>
                                 <a 
-                                    class="btn btn-primary px-4 py-2 fs-6" 
+                                    class="btn btn-primary px-4 py-2 " 
                                     href="https://t.me/BotFather" 
                                     target="_blank" 
                                     role="button">
@@ -63,28 +63,21 @@
                     <!-- 2 -->
                     <div class="row mt-4">
                         <div class="col-8">
-                            <p class="fs-6">
+                            <p class="">
                                 Once BotFather is open (image 1), start the bot by clicking “START” or by typing /start. You will see the list of available commands (image 2).
                             </p>
 
-                            <p class="fs-6">
+                            <p class="">
                                 Use the /newbot command to create a new bot. The BotFather will ask you for a name and username, then generate an authentication token for your new bot.
                                 You will be able to edit your bot settings later.
                             </p>
 
-                            <div class="alert alert-primary d-flex align-items-center fs-6" role="alert">
-                                
-                                <div>
-                                    You can read all about Bots on the official Telegram 
-                                    <a 
-                                        href="https://core.telegram.org/bots#6-botfather"
-                                    
-                                    >
-                                        documentation page
-                                    </a>
-                                    
-                                </div>
-                                </div>
+                            <div class="alert alert-primary" role="alert">
+                                You can read all about Bots on the official Telegram <a href="#" class="alert-link">documentation page</a>
+                            </div>
+
+
+
                         </div>
                         <div class="col text-center">
 
@@ -96,15 +89,15 @@
                     <!-- 3 -->
                     <div class="row mt-4">
                         <div class="col-8">
-                            <p class="fs-6">
+                            <p class="">
                                 The <b>name</b> of your bot is displayed in contact details and elsewhere.
                             </p>
 
-                            <p class="fs-6">
+                            <p class="">
                                 The <b>Username</b> is a short name, to be used in mentions and t.me links. Usernames are 5-32 characters long and are case insensitive, but may only include Latin characters, numbers, and underscores. Your bot's username <b>must</b> end in 'bot', e.g. 'tetris_bot' or 'TetrisBot'.
                             </p>
 
-                            <p class="fs-6">
+                            <p class="">
                                 The <b>token</b> is a string along the lines of <code >110201543:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw</code> that is required to authorize the bot and send requests to the <ins>Bot API</ins>. Keep your token secure and store it safely, it can be used by anyone to control your bot.
                             </p>
                         </div>
@@ -119,7 +112,7 @@
                 <!-- Second step -->
                 <div id="Second-Step" class="container py-5 border-bottom">
                     <div class="row">
-                        <h3 class="fw-bolder fs-3">
+                        <h3 class="fw-bolder ">
                             Step 2: Enter your Bot data
                         </h3>
                     </div>
@@ -127,7 +120,7 @@
                         <div class="col-6">
                             
                             <div class="form-group mb-3">
-                                <label class="my-3 fs-6" for="bot-name">Enter your Bot name</label>
+                                <label class="my-3 " for="bot-name">Enter your Bot name</label>
                                 <input 
                                     type="text" 
                                     class="form-control" 
@@ -144,7 +137,7 @@
                     <div class="row mt-4">
                         <div class="col">
                             <div class="form-group mb-3">
-                                <label class="my-3 fs-6" for="bot-token">Copy and paste the HTTP API token:</label>
+                                <label class="my-3 " for="bot-token">Copy and paste the HTTP API token:</label>
                                 <input 
                                     type="text" 
                                     class="form-control" 
@@ -156,19 +149,19 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="alert alert-primary d-flex align-items-center" role="alert">
-                                
-                                <div class="fs-6">
-                                    <b>Remember!</b> <br />
-                                    If your existing token is compromised or you lost it for some reason, use the /token command to generate a new one.
-                                </div>
-                                </div>
+ 
+                            <div class="alert alert-primary align-items-center" role="alert">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+                                    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg><b>Remember!</b> <br />
+                                If your existing token is compromised or you lost it for some reason, use the /token command to generate a new one.
+                            </div>
                         </div>
                     </div>
                     <div class="row mt-4">
                         <div class="col-6">
                             <div class="form-group mb-3">
-                                <label class="my-3 fs-6" for="shop-name">Shop Display Name</label>
+                                <label class="my-3 " for="shop-name">Shop Display Name</label>
                                 <input 
                                     type="text" 
                                     class="form-control" 
@@ -187,14 +180,14 @@
                     <!-- Third step -->
                     <div id="Third-Step" class="container py-5 border-bottom">
                     <div class="row">
-                        <h3 class="fw-bolder fs-3">
+                        <h3 class="fw-bolder ">
                             Step 3: Set your replies
                         </h3>
                     </div>
                     <div class="row mt-4">
                         <div class="col-7">
                             <div class="form-group">
-                                <label class="fs-4" for="welcomeMessage">Welcome message</label>
+                                <label class="my-3 " for="welcomeMessage">Welcome message</label>
                                 <textarea class="form-control" id="welcomeMessage" cols="30" rows="6">
 Let's get started 🤩
 
@@ -222,7 +215,7 @@ Please tap the button below to open our Telegram store!
                     <div class="row mt-4">
                         <div class="col-7">
                             <div class="form-group">
-                                <label class="fs-4" for="invoiceDescription">Invoice description</label>
+                                <label class="my-3 " for="invoiceDescription">Invoice description</label>
                                 <textarea class="form-control" id="invoiceDescription" cols="30" rows="3">
 Your invoice is ready. To pay for your order, use your card, Google Pay or Apple Pay.
                                 </textarea>
@@ -248,7 +241,7 @@ Your invoice is ready. To pay for your order, use your card, Google Pay or Apple
                     <!-- Forth step -->
                     <div id="Forth-Step" class="container py-5 border-bottom">
                     <div class="row">
-                        <h3 class="fw-bolder fs-3">
+                        <h3 class="fw-bolder ">
                             Step 4: Connect your payment provider
                         </h3>
                     </div>
@@ -256,12 +249,12 @@ Your invoice is ready. To pay for your order, use your card, Google Pay or Apple
                         <div class="col-7">
                             
                             
-                            <p class="fs-6">
+                            <p class="">
                                 Open @botfather and select “Payments”. Botfather will guide you through the process of connecting your payment provider to your Bot. Once it’s done, you will receive a token. Copy and paste this token below:
                             </p>
                            
                             <div class="form-group mb-3">
-                                <label class="my-3 fs-6" for="Provider-Token">Payment Provider Token</label>
+                                <label class="my-3 " for="Provider-Token">Payment Provider Token</label>
                                 <input 
                                     type="text" 
                                     class="form-control" 
@@ -287,7 +280,7 @@ Your invoice is ready. To pay for your order, use your card, Google Pay or Apple
                 <!-- Fifth step -->
                 <div id="Fifth-Step" class="container py-5 border-bottom">
                     <div class="row">
-                        <h3 class="fw-bolder fs-3">
+                        <h3 class="fw-bolder ">
                             Step 5: Save and connect your shop to your bot
                         </h3>
                     </div>
@@ -295,7 +288,7 @@ Your invoice is ready. To pay for your order, use your card, Google Pay or Apple
                         <div class="col">
                             
                             
-                            <p class="fs-6">
+                            <p class="">
                                 On the next screen you will see a similar link:<br />
                                 <code >
                                     https://app.telegramsales.com/shop/414d7d2d08c233cf49f1a00c89420180/
@@ -338,7 +331,7 @@ Your invoice is ready. To pay for your order, use your card, Google Pay or Apple
                         <div class="row mt-4">
                             <div class="col text-center">
                                 <input 
-                                    class="btn btn-primary px-5 fs-6" 
+                                    class="btn btn-primary px-5 " 
                                     type="submit" 
                                     value="Finish setup and get URL"
                                 >
