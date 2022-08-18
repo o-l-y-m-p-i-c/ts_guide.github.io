@@ -5,282 +5,415 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TS</title>
-    <!-- <link href="./assets/AOS/aos.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="./assets/css/root.css">
-    <link rel="stylesheet" href="./assets/css/index.css">
-    <link href="./assets/cdbootstrap/css/cdb.css" rel="stylesheet" />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./assets/bootstarp/css/bootstrap.css">
     <link href="./assets/lightbox/css/lightbox.css" rel="stylesheet" />
    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 </head>
 <body class="overflow-x-hidden">
-    <header id="header" class="">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-xxl ">
-                <a class="navbar-brand" href="#">
-                    <img src="./assets/img/logo.png" class="logo" alt="">
-                </a>
-                <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-white active" aria-current="page" href="#">Getting started</a>
-                    </li>
 
-                    <li class="nav-item dropdown" style="display:none">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
     <main id="main " class="main ">
-        <section id="Banner">
-            <div class="carousel-banner">
-                <div id="testimonials" class="carousel slide" data-bs-ride="carousel" >                    
-                    <div class="carousel-inner">
-                        <div class="carousel-item text-center active" > 
-                            <img src="./assets/img/web3.png" class="d-block w-100 " style="margin:0 auto; object-fit:contain" alt="...">
-                        </div>
-                        <div class="carousel-item text-center" >
-                            <img src="./assets/img/web2.png" class="d-block w-100" style="margin:0 auto; object-fit:contain"  alt="...">
-                        </div>
-                        <div class="carousel-item text-center" >
-                            <img src="./assets/img/web1.png" class="d-block w-100" style="margin:0 auto; object-fit:contain"  alt="...">
-                        </div>
-                        <div class="carousel-shadow" >
-                            <div class="carousel-content">
-                                <h1 class="carousel-h1 text-white fw-normal text-uppercase" data-aos="fade-up"  data-aos-duration="2000" data-aos-anchor-placement="center-bottom">
-                                    Create your own Bot
-                                </h1>
-                                <p class="carousel-p text-white fw-normal" data-aos="fade-up"  data-aos-duration="2000" data-aos-anchor-placement="center-bottom">
-                                    Paragraph
-                                </p>
-                            </div>
+
+        <section class="bg-white "> 
+            <div class="container py-4 border-bottom">
+                <h2 class="text-center fs-4">
+                    Welcome to TelegramSales! <br />
+                    This guide will help you to create your new shiny Telegram Shop. <br />
+                    Please follow the instructions below.
+                </h2>
+            </div>
+        </section>
+        <section id="Getting-started" class="">
+            <form method="POST">
+                <!-- First step -->
+                <div id="First-Step" class="container py-5 border-bottom">
+                    <!-- 1 -->
+                    <div class="row ">
+                        <div class="col-8">
                             
-                            <div class="carousel-inner-bottom">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-                                    <path class="elementor-shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
-                                    c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
-                                    c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
-                                </svg>
-                            </div>
+                            <h3 class="fw-bolder fs-3"   >
+                                Step 1: Create your bot using @botfather
+                            </h3> 
+                                
+                            
+                            <p class="fw-normal fs-5 py-4"   >
+                                <!-- Follow the <a class="link-primary" href="#Create-Bot">instructions</a> in Botfather to create a bot -->
+                                Launch Botfather and Follow the <a class="link-primary" href="#Create-Bot">instructions</a> in order to create a bot. 
+                            </p>
+
+                            <p class="fw-normal fs-5 ">
+                                Launch Botfather and Follow the instructions in order to create a bot. 
+                                Please, be careful and don’t confuse the original @BotFather (<a class="link-primary" href="https://t.me/BotFather">https://t.me/BotFather</a>) with other variants! 
+                                Click the button below for quick access:
+                            </p>
+                            <p>
+                                <a 
+                                    class="btn btn-primary px-4 py-2 fs-5" 
+                                    href="https://t.me/BotFather" 
+                                    target="_blank" 
+                                    role="button">
+                                    Open @botfather in Telegram
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col text-center">
+                            <a 
+                                href="assets/img/2.png" 
+                                data-lightbox="Step 1 - 1"  
+                                data-title="Step 1 - 1"
+                            >
+                                <img class="img-fluid" src="./assets/img/2.png" style="width:300px" alt="Step 1 - 1">
+                            </a>
+                            
+
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="row mt-4">
+                        <div class="col-8">
+                            <p class="fs-5">
+                                Once BotFather is open (image 1), start the bot by clicking “START” or by typing /start. You will see the list of available commands (image 2).
+                            </p>
+
+                            <p class="fs-5">
+                                Use the /newbot command to create a new bot. The BotFather will ask you for a name and username, then generate an authentication token for your new bot.
+                                You will be able to edit your bot settings later.
+                            </p>
+
+                            <div class="alert alert-primary d-flex align-items-center fs-5" role="alert">
+                                
+                                <div>
+                                    You can read all about Bots on the official Telegram 
+                                    <a 
+                                        href="https://core.telegram.org/bots#6-botfather"
+                                    
+                                    >
+                                        documentation page
+                                    </a>
+                                    
+                                </div>
+                                </div>
+                        </div>
+                        <div class="col text-center">
+                            <a 
+                                href="assets/img/3.png" 
+                                data-lightbox="Step 1 - 2"  
+                                data-title="Step 1 - 2"
+                            >
+                                <img class="img-fluid" style="width:300px" src="./assets/img/3.png" alt="Step 1 - 2">
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <!-- 3 -->
+                    <div class="row mt-4">
+                        <div class="col-8">
+                            <p class="fs-5">
+                                The <b>name</b> of your bot is displayed in contact details and elsewhere.
+                            </p>
+
+                            <p class="fs-5">
+                                The <b>Username</b> is a short name, to be used in mentions and t.me links. Usernames are 5-32 characters long and are case insensitive, but may only include Latin characters, numbers, and underscores. Your bot's username <b>must</b> end in 'bot', e.g. 'tetris_bot' or 'TetrisBot'.
+                            </p>
+
+                            <p class="fs-5">
+                                The <b>token</b> is a string along the lines of <span class=" text-primary p-1 alert alert-primary align-items-center border-0 rounded-0 text-break">110201543:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw</span> that is required to authorize the bot and send requests to the <ins>Bot API</ins>. Keep your token secure and store it safely, it can be used by anyone to control your bot.
+                            </p>
+                        </div>
+                        <div class="col text-center">
+                            <a 
+                                href="assets/img/3.png" 
+                                data-lightbox="Step 1 - 3"  
+                                data-title="Step 1 - 3"
+                            >
+                                <img class="img-fluid" style="width:300px" src="./assets/img/3.png" alt="Step 1 - 3">
+                            </a>
                         </div>
                         
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="Getting-started" class="py-5 bg-white border-bottom">
-            <form method="post" class="container ">
-                <h2 class="text-center text-uppercase " data-aos="fade-up"  data-aos-duration="2000" data-aos-anchor-placement="center-bottom">
-                    Getting started
-                </h2>
-                <div class="row">
-                    <div class="d-flex align-items-center gap justify-content-start flex-wrap" style="row-gap:10px;column-gap: 10px;">
-                       <h3 class="fw-light fs-3" data-aos="fade-up"  data-aos-duration="2000" data-aos-anchor-placement="center-bottom">
-                            <strong class="fw-normal">Step 1:</strong> Create your bot using @botfather
-                        </h3> 
-                        <a class="btn btn-primary" data-aos="fade-left" data-aos-duration="2000" data-aos-anchor-placement="center-bottom" href="https://t.me/BotFather" target="_blank" role="button">open @botfather</a>
-                    </div>
-                    
-                    <p class="fw-light fs-6" data-aos="fade-up"  data-aos-duration="2000" data-aos-anchor-placement="center-bottom">
-                        Follow the <a class="link-primary" href="#Create-Bot">instructions</a> in Botfather to create a bot
-                    </p>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-6 " >
-                        <h3 class="fw-light fs-3" data-aos="fade-up"  data-aos-duration="2000" data-aos-anchor-placement="center-bottom">
-                            <strong class="fw-normal">Step 2:</strong> Copy and paste the HTTP API token:
+                <!-- Second step -->
+                <div id="Second-Step" class="container py-5 border-bottom">
+                    <div class="row">
+                        <h3 class="fw-bolder fs-3">
+                            Step 2: Enter your Bot data
                         </h3>
-                        <div class="input-group my-3" style="max-width: 100%; width: 500px;" data-aos="fade-up"  data-aos-duration="2000" data-aos-anchor-placement="center-bottom">
-                            <span class="input-group-text btn-primary" id="basic-addon1">#</span>
-                            <input type="text" class="form-control" placeholder="Paste the HTTP API token here..." aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <h5 class="fs-5 my-2">
+                                Enter your Bot name
+                            </h5>
+                            <div class="input-group mb-3">
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    placeholder="Your Bot username (must end with “bot”)"  
+                                    aria-describedby="basic-addon1"
+                                    name="bot-name"
+                                    >
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <h5 class="fs-5 my-2">
+                                Copy and paste the HTTP API token:
+                            </h5>
+                            <div class="input-group mb-3">
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    placeholder="Paste the HTTP API token here..."  
+                                    aria-describedby="basic-addon1"
+                                    name="bot-token"
+                                    >
+                                </div>
+                        </div>
+                        <div class="col">
+                            <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                
+                                <div class="fs-5">
+                                    <b>Remember!</b> <br />
+                                    If your existing token is compromised or you lost it for some reason, use the /token command to generate a new one.
+                                </div>
+                                </div>
                         </div>
                     </div>
-                    <div class="col-6 d-flex justify-content-center">
-                        <a 
-                            data-aos="fade-left"
-                            href="assets/img/14.png" 
-                            data-lightbox="TG Bot API TOKEN" 
-                            data-title="TG Bot API TOKEN">
-                            <img 
-                                class="img-fluid shadow p-3 mb-5 bg-body rounded" 
-                                src="./assets/img/14.png" 
-                                alt="TG Bot API TOKEN"
-                            >
-                        </a>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <h5 class="fs-5 my-2">
+                                Shop Display Name
+                            </h5>
+                            <div class="input-group mb-3">
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    placeholder="Displayed when user opens your shop"  
+                                    aria-describedby="basic-addon1"
+                                    name="bot-shop-name"
+                                >
+                                </div>
+                        </div>
+                        
                     </div>
-                    
                 </div>
-                <div class="row">
-                    <h3 class="fw-light fs-3" data-aos="fade-up"  data-aos-duration="2000" data-aos-anchor-placement="center-bottom">
-                        <strong class="fw-normal ">Step 3: </strong> Start building your Telegram sales channel
-                    </h3>
-                    
+                    <!-- Third step -->
+                    <div id="Third-Step" class="container py-5 border-bottom">
+                    <div class="row">
+                        <h3 class="fw-bolder fs-3">
+                            Step 3: Set your replies
+                        </h3>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-7">
+                            <h5 class="fs-4">
+                                Welcome message 
+                            </h5>
+                            <div class="border px-2 py-4 fs-5">
+                                <p>
+                                    Let's get started 🤩
+                                </p>
+                                <p>
+                                    Please tap the button below to open our Telegram store!
+                                    <br />
+                                    ⬇️⬇️⬇️
+
+                                </p>
+                            
+                            </div>
+                            <p class="fs-5">
+                                What sholud your Bot reply to /start command?
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p class="my-1">
+                                Example:
+                            </p>
+                            <a 
+                                href="assets/img/3.png" 
+                                data-lightbox="Step 3 - 1"  
+                                data-title="Step 3 - 1"
+                            >
+                                <img 
+                                    src="./assets/img/3-step-1.png" 
+                                    width="540px" 
+                                    alt="Step 3 - 1"
+                                    class="img-fluid"
+                                >
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-7">
+                            <h5 class="fs-4">
+                                Invoice description 
+                            </h5>
+                            <div class="border px-2 py-4 fs-5">
+                                <p>
+                                    Your invoice is ready. To pay for your order, use your card, Google Pay or Apple Pay.
+                                </p>
+                               
+                            
+                            </div>
+                            <p class="fs-5">
+                                The description text that comes with the payment link
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p class="my-1">
+                                Example:
+                            </p>
+                            
+                            <a 
+                                href="assets/img/3.png" 
+                                data-lightbox="Step 3 -2"  
+                                data-title="Step 3 -2"
+                            >
+                                <img 
+                                    src="./assets/img/3-step-2.png" 
+                                    width="540px" 
+                                    alt="Step 3 - 2"
+                                    class="img-fluid"
+                                >
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                    <p class="text-center" style="margin-top:10px" >
-                        <a class="btn btn-primary" href="#" role="button" data-aos="fade-up"  data-aos-duration="2000" data-aos-anchor-placement="center-bottom">Start building</a>
-                    </p>
+                    <!-- Forth step -->
+                    <div id="Forth-Step" class="container py-5 border-bottom">
+                    <div class="row">
+                        <h3 class="fw-bolder fs-3">
+                            Step 4: Connect your payment provider
+                        </h3>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-7">
+                            
+                            
+                            <p class="fs-5">
+                                Open @botfather and select “Payments”. Botfather will guide you through the process of connecting your payment provider to your Bot. Once it’s done, you will receive a token. Copy and paste this token below:
+                            </p>
+                            <h5 class="mt-5 fs-5">
+                                Payment Provider Token
+                            </h5>
+                            <div class="input-group mb-3">
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    placeholder="Enter token" 
+                                    aria-describedby="basic-addon1" 
+                                    name="bot-payment-token"
+                                >
+                            </div>
+                        </div>
+                        <div class="col">
+                            
+                            <a 
+                                href="assets/img/4-step-1.png" 
+                                data-lightbox="Step 4 - 1"  
+                                data-title="Step 4 - 1"
+                            >
+                                <img 
+                                    src="./assets/img/4-step-1.png" 
+                                    width="540px" 
+                                    alt="Step 4 - 1"
+                                    class="img-fluid"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fifth step -->
+                <div id="Fifth-Step" class="container py-5 border-bottom">
+                    <div class="row">
+                        <h3 class="fw-bolder fs-3">
+                            Step 5: Save and connect your shop to your bot
+                        </h3>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            
+                            
+                            <p class="fs-5">
+                                On the next screen you will see a similar link: <br />
+                                <a href="#"
+                                    class="text-primary p-1 alert alert-primary align-items-center border-0 rounded-0 pe-none text-break"
+                                >https://app.telegramsales.com/shop/414d7d2d08c233cf49f1a00c89420180/</a> <br />
+                                Open @botfather again and create a button. Add the above URL for the button to open your Shop.<br />
+                                You can customize your button title. We recommend “Shop Now” or “Open Shop”.                                 
+                            </p>
+                            
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-4 text-center">
+                                <a 
+                                    href="assets/img/5-step-1.png" 
+                                    data-lightbox="Step 5 - 1"  
+                                    data-title="Step 5 - 1"
+                                >
+                                    <img 
+                                        src="./assets/img/5-step-1.png" 
+                                        alt="Step 5 - 1"
+                                        class="img-fluid"
+                                    >
+                                </a>
+                            </div>
+                            <div class="col-4 text-center">
+                                <a 
+                                    href="assets/img/5-step-2.png" 
+                                    data-lightbox="Step 5 - 2"  
+                                    data-title="Step 5 - 2"
+                                >
+                                    <img 
+                                        src="./assets/img/5-step-2.png" 
+                                        alt="Step 5 - 2"
+                                        class="img-fluid"
+                                    >
+                                </a>
+                            </div>
+                            <div class="col-4 text-center">
+                                <a 
+                                    href="assets/img/5-step-3.png" 
+                                    data-lightbox="Step 5 - 3"  
+                                    data-title="Step 5 - 3"
+                                >
+                                    <img 
+                                        src="./assets/img/5-step-3.png" 
+                                        alt="Step 5 - 3"
+                                        class="img-fluid"
+                                    >
+                                </a>
+                                <!-- <img src="./assets/img/5-step-3.png" class="img-fluid" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col text-center">
+                                <input 
+                                    class="btn btn-primary px-5 fs-5" 
+                                    type="submit" 
+                                    value="Finish setup and get URL"
+                                >
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </form>
-        </section>
-        <section id="Create-Bot" >
-            <div class="container">
-                <div class="row text-center" >
-                    <h2 data-aos="fade-up"  data-aos-duration="2000" data-aos-anchor-placement="center-bottom">
-                        Instruction to create a bot with Botfather 
-                    </h2>
-                </div>
-                <!-- 1 step -->
-                <div class="row align-items-center">
-                    
-                    <div class="col-6">
-                        <h3 data-aos="fade-up"  data-aos-duration="2000" data-aos-anchor-placement="center-bottom">Step 1:</h3>
-                        <p class="text-justify" data-aos="fade-up"  data-aos-duration="2000" data-aos-anchor-placement="center-bottom">
-                            In Telegram is Father Bot, which is main bot of bots and it will help us to reach a goal for creating our shop 
-                            (<a class="text-primary text-wrap-anywhere" href="https://core.telegram.org/bots#6-botfather" target="_blank">https://core.telegram.org/bots#6-botfather</a>).
-                             So, to create Bot, we must to open Telegram App and find by tag this bot – 
-                             <a class="text-primary" href="https://t.me/BotFather" target="_blank">@BotFather</a>
-                        </p>
-                    </div>
-                    <div class="col-6 d-flex justify-content-center">
-                        <a 
-                            data-aos="fade-left"  data-aos-duration="2000" data-aos-anchor-placement="top-bottom"
-                            href="assets/img/1.png" 
-                            data-lightbox="@BotFather search" 
-                            data-title="@BotFather search">
-                            <img 
-                                class="img-fluid shadow p-3 mb-5 bg-body rounded" 
-                                src="./assets/img/1.png" 
-                                alt="@BotFather search"
-                            >
-                        </a>
-                    </div>
-                </div>
-                <!-- 2 step -->
-                <div class="row align-items-center">
-                    <div class="col-6 d-flex justify-content-center">
-                        <a 
-                            data-aos="fade-right"  data-aos-duration="2000" data-aos-anchor-placement="top-bottom"
-                            href="assets/img/2.png" 
-                            data-lightbox="@BotFather main page" 
-                            data-title="@BotFather main page">
-                            <img 
-                                class="img-fluid shadow p-3 mb-5 bg-body rounded" 
-                                src="./assets/img/2.png" 
-                                alt="@BotFather main page"
-                            >
-                        </a>
-                    </div> 
-                    <div class="col-6">
-                        <h3 data-aos="fade-up"  data-aos-duration="2000" data-aos-anchor-placement="center-bottom">Step 2:</h3>
-                        <p class="text-justify" data-aos="fade-up"  data-aos-duration="2000" data-aos-anchor-placement="center-bottom">
-                            After entering a query in the search, will displayed list of results, where you must select the correct one. In our case it’s first. Please, be careful and don’t confuse with other variants! Since we did that, we will be translated to the Bot. Then we have to click on “START” button to activate him.                         
-                        </p>
-                    </div>
-                   
-                </div>
-                <!-- 3 step -->
-                <div class="row align-items-center">
-                    
-                    <div class="col-6">
-                        <h3 data-aos="fade-up"  data-aos-duration="2000" data-aos-anchor-placement="top-bottom">Step 3:</h3>
-                        <p class="text-justify" data-aos="fade-up"  data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
-                            How we can see this <a class="text-primary" href="https://t.me/BotFather" target="_blank">@BotFather</a> is multiple, so on answer we have list of commands with which help you can create your own bot for different needs.                       
-                        </p>
-                    </div>
-                    <div class="col-6 d-flex justify-content-center">
-                        <a 
-                            data-aos="fade-left"  data-aos-duration="2000" data-aos-anchor-placement="top-bottom"
-                            href="assets/img/3.png" 
-                            data-lightbox="@BotFather commands list" 
-                            data-title="@BotFather commands list">
-                            <img 
-                                class="img-fluid shadow p-3 mb-5 bg-body rounded" 
-                                src="./assets/img/3.png" 
-                                alt="@BotFather commands list"
-                            >
-                        </a>
-                    </div>
-                </div>
-                <!-- 4 step -->
-                <div class="row align-items-center">
-                    <div class="col-6 d-flex justify-content-center">
-                        <a 
-                            data-aos="fade-right"  data-aos-duration="2000" data-aos-anchor-placement="top-bottom"
-                            href="assets/img/4.png" 
-                            data-lightbox="Command – “/newbot”" 
-                            data-title="Command – “/newbot”">
-                            <img 
-                                class="img-fluid shadow p-3 mb-5 bg-body rounded" 
-                                src="./assets/img/4.png" 
-                                alt="Command – “/newbot”"
-                            >
-                        </a>
-                    </div> 
-                    <div class="col-6">
 
-                        <h3 data-aos="fade-up"  data-aos-duration="2000" data-aos-anchor-placement="top-bottom">Step 4:</h3>
-                        <p class="text-justify" data-aos="fade-up"  data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
-                            In our case we are creating simple Bot, so to do that, we must to select in the list or write next command – “/newbot”.
 
-                        </p>
-                        <p class="text-justify" data-aos="fade-up"  data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
-                            By instruction of <a class="text-primary" href="https://t.me/BotFather" target="_blank">@BotFather</a>, for first step we must to give name to our Bot. In this example I named it like “test-shop”. After we must to mention username of Bot. When we done it we will have link to the bot and API token which we will need to create shop. 
-                            If you named your Bot wrong, just use commands witch are mentioned earliar.  
-                        </p>
-                    </div>
-                   
-                </div>
 
-          
-            </div>
+
             
         </section>
+
     </main>
-    <footer id="footer">
-        <div class="container text-center my-5">
-            Подвал
-        </div>
-    </footer>
-    <script src="./assets/AOS/aos.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="./assets/lightbox/js/lightbox.js" ></script>
-    <script>
-        // $('#carouselExampleInterval').carousel({
-        //     interval: 2000
-        // })
-        // $(document).ready(function() {
-        //     $('.carousel').carousel({
-        //         interval: 2000
-        //     })
-        // });
-    </script>
-    <script src="./assets/cdbootstrap/js/cdb.js"></script>
-    <script>
-      const stepper = document.querySelector('#stepper');
-      new CDB.Stepper(stepper);
-    </script>
-    <!-- <script>
-        AOS.init();
-      </script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+
+
 </body>
 </html>
