@@ -1,7 +1,8 @@
 @media screen and (max-width: 768px) {
     .main .row{
         flex-direction: column !important;
-        row-gap: 20px;text-align: center !important;
+        row-gap: 20px;
+        /* text-align: center !important; */
     }
     .main .row .col,
     .main .row .col-2,
@@ -13,6 +14,6 @@
     .main .row .col-8 
     {
         width: 100%;
-        text-align: center !important;
+        /* text-align: center !important; */
     }
 }
