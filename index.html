@@ -7,13 +7,13 @@
     <title>TS</title>
     <link rel="stylesheet" href="./assets/bootstarp/css/bootstrap.css">
     <link href="./assets/lightbox/css/lightbox.css" rel="stylesheet" />
-   
+    <link rel="stylesheet" href="./assets/css/index.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body class="overflow-x-hidden">
 
-    <main id="main " class="main ">
+    <main id="main create-bot" class="main ">
 
         <section class="bg-white "> 
             <div class="container py-4 border-bottom">
@@ -142,35 +142,35 @@
                     </div>
                     <div class="row mt-4">
                         <div class="col-6">
-                            <h5 class="fs-5 my-2">
-                                Enter your Bot name
-                            </h5>
-                            <div class="input-group mb-3">
+                            
+                            <div class="form-group mb-3">
+                                <label class="my-3 fs-5" for="bot-name">Enter your Bot name</label>
                                 <input 
                                     type="text" 
                                     class="form-control" 
-                                    placeholder="Your Bot username (must end with “bot”)"  
-                                    aria-describedby="basic-addon1"
+                                    id="bot-name" 
+                                    aria-describedby="" 
+                                    placeholder="Enter your Bot name" 
                                     name="bot-name"
-                                    >
+                                >
+                                <small id="shopNameHelper" class="form-text text-muted">The username you chose for your Bot (ends with “bot”)</small>
                             </div>
                         </div>
                         
                     </div>
                     <div class="row mt-4">
                         <div class="col">
-                            <h5 class="fs-5 my-2">
-                                Copy and paste the HTTP API token:
-                            </h5>
-                            <div class="input-group mb-3">
+                            <div class="form-group mb-3">
+                                <label class="my-3 fs-5" for="bot-token">Copy and paste the HTTP API token:</label>
                                 <input 
                                     type="text" 
                                     class="form-control" 
-                                    placeholder="Paste the HTTP API token here..."  
-                                    aria-describedby="basic-addon1"
+                                    id="bot-token" 
+                                    aria-describedby="" 
+                                    placeholder="Paste the HTTP API token here..." 
                                     name="bot-token"
-                                    >
-                                </div>
+                                >
+                            </div>
                         </div>
                         <div class="col">
                             <div class="alert alert-primary d-flex align-items-center" role="alert">
@@ -184,18 +184,19 @@
                     </div>
                     <div class="row mt-4">
                         <div class="col-6">
-                            <h5 class="fs-5 my-2">
-                                Shop Display Name
-                            </h5>
-                            <div class="input-group mb-3">
+                            <div class="form-group mb-3">
+                                <label class="my-3 fs-5" for="shop-name">Shop Display Name</label>
                                 <input 
                                     type="text" 
                                     class="form-control" 
-                                    placeholder="Displayed when user opens your shop"  
-                                    aria-describedby="basic-addon1"
+                                    id="shop-name" 
+                                    aria-describedby="" 
+                                    placeholder="Displayed when user opens your shop" 
                                     name="bot-shop-name"
                                 >
-                                </div>
+                                <small id="shopNameHelper" class="form-text text-muted">Displayed when user opens your shop</small>
+                            </div>
+                           
                         </div>
                         
                     </div>
@@ -209,24 +210,16 @@
                     </div>
                     <div class="row mt-4">
                         <div class="col-7">
-                            <h5 class="fs-4">
-                                Welcome message 
-                            </h5>
-                            <div class="border px-2 py-4 fs-5">
-                                <p>
-                                    Let's get started 🤩
-                                </p>
-                                <p>
-                                    Please tap the button below to open our Telegram store!
-                                    <br />
-                                    ⬇️⬇️⬇️
+                            <div class="form-group">
+                                <label class="fs-4" for="welcomeMessage">Welcome message</label>
+                                <textarea class="form-control" id="welcomeMessage" cols="30" rows="6">
+Let's get started 🤩
 
-                                </p>
-                            
+Please tap the button below to open our Telegram store!
+⬇️⬇️⬇️
+                                </textarea>
+                                <small id="welcomeMessageHelper" class="form-text text-muted">What sholud your Bot reply to /start command?</small>
                             </div>
-                            <p class="fs-5">
-                                What sholud your Bot reply to /start command?
-                            </p>
                         </div>
                         <div class="col">
                             <p class="my-1">
@@ -249,19 +242,13 @@
                     </div>
                     <div class="row mt-4">
                         <div class="col-7">
-                            <h5 class="fs-4">
-                                Invoice description 
-                            </h5>
-                            <div class="border px-2 py-4 fs-5">
-                                <p>
-                                    Your invoice is ready. To pay for your order, use your card, Google Pay or Apple Pay.
-                                </p>
-                               
-                            
+                            <div class="form-group">
+                                <label class="fs-4" for="invoiceDescription">Invoice description</label>
+                                <textarea class="form-control" id="invoiceDescription" cols="30" rows="3">
+Your invoice is ready. To pay for your order, use your card, Google Pay or Apple Pay.
+                                </textarea>
+                                <small id="invoiceDescriptionHelper" class="form-text text-muted">What sholud your Bot reply to /start command?</small>
                             </div>
-                            <p class="fs-5">
-                                The description text that comes with the payment link
-                            </p>
                         </div>
                         <div class="col">
                             <p class="my-1">
@@ -297,15 +284,15 @@
                             <p class="fs-5">
                                 Open @botfather and select “Payments”. Botfather will guide you through the process of connecting your payment provider to your Bot. Once it’s done, you will receive a token. Copy and paste this token below:
                             </p>
-                            <h5 class="mt-5 fs-5">
-                                Payment Provider Token
-                            </h5>
-                            <div class="input-group mb-3">
+                           
+                            <div class="form-group mb-3">
+                                <label class="my-3 fs-5" for="Provider-Token">Payment Provider Token</label>
                                 <input 
                                     type="text" 
                                     class="form-control" 
+                                    id="Provider-Token" 
+                                    aria-describedby="" 
                                     placeholder="Enter token" 
-                                    aria-describedby="basic-addon1" 
                                     name="bot-payment-token"
                                 >
                             </div>
