@@ -56,12 +56,44 @@
                                 <div class="row">
                                     <div class="col">
                                         <h1 class="text-center ">
-                                            Sign up now
+                                            Create an account
                                         </h1>
                                     </div>
                                 </div>
-                                
-
+                                <div class="row">
+                                    <div class="col">
+                                        
+                                        <div class="form-group mb-1">
+                                            <input 
+                                                type="text" 
+                                                class="form-control"
+                                                id="firstName" 
+                                                aria-describedby="emailHelp" 
+                                                placeholder="First Name"
+                                                name="firstName"
+                                            >
+                                            <small id="firstHelp" class="form-text text-muted">
+                                                <!-- Error -->
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        
+                                        <div class="form-group mb-1">
+                                            <input 
+                                                type="text" 
+                                                class="form-control"
+                                                id="lastName" 
+                                                aria-describedby="emailHelp" 
+                                                placeholder="Last Name"
+                                                name="lastName"
+                                            >
+                                            <small id="lastHelp" class="form-text text-muted">
+                                                <!-- Error -->
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="col">
                                         <div class="form-group mb-1">
@@ -79,7 +111,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                
                                 <div class="row">
                                     <div class="col">
                                         <div class="form-group mb-1">
@@ -87,9 +118,25 @@
                                                 type="password" 
                                                 class="form-control" 
                                                 id="password" 
-                                                aria-describedby="emailHelp" 
-                                                placeholder="Password"
                                                 name="password"
+                                                aria-describedby="emailHelp" 
+                                                placeholder="Password">
+                                            <small id="passwordHelp" class="form-text text-muted">
+                                                <!-- Error -->
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-group mb-1">
+                                            <input 
+                                                type="password" 
+                                                class="form-control" 
+                                                id="password2" 
+                                                aria-describedby="emailHelp" 
+                                                placeholder="Repeat Password"
+                                                name="repeatPassword"
                                                 >
                                             <small id="passwordHelp" class="form-text text-muted">
                                                 <!-- Error -->
@@ -97,26 +144,35 @@
                                         </div>
                                     </div>
                                 </div>
-
+                                <div class="row">
+                                    <div class="custom-control custom-checkbox text-center">
+                                        <input type="checkbox" class="custom-control-input" name="termsFlag" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">
+                                            I agree to the 
+                                            <a href="https://app.telegramsales.com/terms-and-conditions/">
+                                                Terms and Conditions
+                                            </a>
+                                            
+                                        </label>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="col">
-                                        <input class="btn btn-primary my-3 py-2 w-100" type="submit" value="SIGN UP">
+                                        <input class="btn btn-primary my-3 py-2 w-100" type="submit" value="Register">
                                     </div>
                                 
                                 </div>
-                                
                                 <div class="row">
                                     <div class="col">
                                         <p class="text-center">
-                                            Not a member? 
-                                            <a href="./registration.html">
-                                                Sign up now 
+                                            All ready a member? 
+                                            <a href="./login.html">
+                                                Login 
                                             </a>
                                             
                                         </p>
                                     </div>
                                 </div>
-                                
                                 <div class="row">
                                     <div class="col">
                                         <p class="text-center">
@@ -138,16 +194,7 @@
                                     
                                     
                                 </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <p class="text-center">
-                                            <a href="./forgot.html">
-                                                Forgot? 
-                                            </a>
-                                            
-                                        </p>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                         <div class="min-vh-100 h-100 position-absolute p-0 m-0 col-6 bg-img" style="right:0;background-image: linear-gradient(130deg, #4632DA 0%, #06D9FA 89%);">
@@ -158,11 +205,11 @@
                                 style="position:sticky; top:0px; object-fit:cover;opacity: 0.15;"
                             >
 
-                            </div>
                         </div>
-                    </form>
+                    </div>
+                </form>
                     
-                </div>
+            </div>
                 <!-- <div class="row px-5">
                     <div class="col-6">
 s
