@@ -1,7 +1,7 @@
 .btn-floating {
     width: 2.3125rem;
     height: 2.3125rem;
-    /* border-radius: 50%; */
+    border-radius: 50%;
   }
 
 @media screen and (max-width:1024px) {
@@ -14,20 +14,20 @@
 }
 
 @media screen and (max-width: 768px) {
-    .main .row{
+    .create-shop .row{
         flex-direction: column !important;
         row-gap: 20px;
         /* text-align: center !important; */
     }
     .login form.row .col-7,
-    .main .row .col,
-    .main .row .col-2,
-    .main .row .col-3,
-    .main .row .col-4,
-    .main .row .col-5,
-    .main .row .col-6,
-    .main .row .col-7,
-    .main .row .col-8 
+    .create-shop .row .col,
+    .create-shop .row .col-2,
+    .create-shop .row .col-3,
+    .create-shop .row .col-4,
+    .create-shop .row .col-5,
+    .create-shop .row .col-6,
+    .create-shop .row .col-7,
+    .create-shop .row .col-8 
     {
         width: 100%;
         /* text-align: center !important; */
